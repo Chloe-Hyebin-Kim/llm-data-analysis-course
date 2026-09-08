@@ -28,6 +28,9 @@ data/external/*
 !data/external/
 !data/external/.gitkeep
 
+# example
+practice/chapter*/templates/
+
 # Airflow runtime
 .airflow/
 automation/airflow/.env
