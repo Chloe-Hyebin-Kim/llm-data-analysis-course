@@ -7,16 +7,16 @@
 
 ## 0. 제출 정보
 
-- 이름:
-- GitHub ID:
+- 이름: 김혜빈
+- GitHub ID: Chloe-Hyebin-Kim (https://github.com/Chloe-Hyebin-Kim)
 - 개인 저장소명: `llm-data-analysis-study`
-- 작성일:
+- 작성일: 2026-09-08
 - 사용한 LLM:
 
 ### 최종 제출 URL
 
 ```text
-여기에 개인 GitHub 저장소의 chapter01/chapter01.md 파일 URL을 입력하세요.
+https://github.com/Chloe-Hyebin-Kim/
 ```
 
 ---
@@ -26,7 +26,7 @@
 ### 내가 선택한 막연한 질문
 
 ```text
-여기에 작성하세요.
+매출을 늘리기 위한 발주 상품 기준 선정
 ```
 
 ### 왜 이 질문이 모호하다고 생각했는가?
