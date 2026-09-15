@@ -13,9 +13,8 @@
 ### 최종 제출 URL
 
 ```text
-https://github.com/Chloe-Hyebin-Kim/llm-data-analysis-study/blob/main/chapter02/chapter02.md
+https://github.com/Chloe-Hyebin-Kim/llm-data-analysis-course/blob/main/practice/chapter02/chapter02.md
 ```
-
 ---
 
 ## 1. Python과 Git 환경 확인
