@@ -727,7 +727,7 @@ LLM 답변을 그대로 실행하지 말고 영향이 큰 수정이나 파일 �
 [Chapter 04 Evidence]
 
 1. Notebook
-- notebooks/ch04_pandas_basic.ipynb 실행 완료: [예/아니오]
+- notebooks/ch04_pandas_basic.ipynb 실행 완료: [예]
 
 2. 병합 검증
 - orders.order_id 중복: [직접 실행 결과]
