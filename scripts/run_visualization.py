@@ -23,8 +23,14 @@
 """
 
 from pathlib import Path
+import sys
 
-from src.visualization import (
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.visualization import (  # noqa: E402
     build_visualization_report,
     create_all_figures,
     create_visualization_summary,
@@ -33,8 +39,8 @@ from src.visualization import (
 )
 
 
-PROCESSED_DIR = Path("data/processed")
-REPORT_DIR = Path("reports")
+PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
+REPORT_DIR = PROJECT_ROOT / "reports"
 FIGURE_DIR = REPORT_DIR / "figures"
 SUMMARY_PATH = REPORT_DIR / "ch07_visualization_summary.md"
 

@@ -130,10 +130,11 @@ def plot_category_sales(
     """카테고리별 매출 막대그래프를 그립니다."""
     plt.figure(figsize=(10, 5))
     plt.bar(category_sales["category"], category_sales["total_sales"])
-    plt.title("카테고리별 매출")
+    plt.title("전체 주문 상태 기준 카테고리별 매출액")
     plt.xlabel("카테고리")
-    plt.ylabel("총매출")
+    plt.ylabel("총매출액 (원)")
     plt.xticks(rotation=45)
+    plt.ylim(bottom=0)
     _save_or_show(output_path, show=show)
 
 
@@ -145,10 +146,11 @@ def plot_monthly_sales(
     """월별 매출 선 그래프를 그립니다."""
     plt.figure(figsize=(10, 5))
     plt.plot(monthly_sales["order_month"], monthly_sales["total_sales"], marker="o")
-    plt.title("월별 매출 추이")
+    plt.title("전체 주문 상태 기준 월별 매출액")
     plt.xlabel("주문 월")
-    plt.ylabel("총매출")
+    plt.ylabel("총매출액 (원)")
     plt.xticks(rotation=45)
+    plt.ylim(bottom=0)
     _save_or_show(output_path, show=show)
 
 
@@ -162,7 +164,7 @@ def plot_product_price_hist(
     plt.figure(figsize=(10, 5))
     plt.hist(products["price"], bins=bins)
     plt.title("상품 가격 분포")
-    plt.xlabel("상품 가격")
+    plt.xlabel("상품 가격 (원)")
     plt.ylabel("상품 수")
     _save_or_show(output_path, show=show)
 
@@ -176,8 +178,8 @@ def plot_price_quantity_scatter(
     plt.figure(figsize=(10, 5))
     plt.scatter(product_sales["price"], product_sales["total_quantity"], alpha=0.6)
     plt.title("상품 가격과 판매 수량의 관계")
-    plt.xlabel("상품 가격")
-    plt.ylabel("총 판매 수량")
+    plt.xlabel("상품 가격 (원)")
+    plt.ylabel("총 판매 수량 (개)")
     _save_or_show(output_path, show=show)
 
 
@@ -206,7 +208,7 @@ def plot_top_customers(
     plt.figure(figsize=(10, 6))
     plt.barh(top_customers["customer_label"], top_customers["total_sales"])
     plt.title("구매 금액 상위 10명 고객")
-    plt.xlabel("총 구매 금액")
+    plt.xlabel("총 구매 금액 (원)")
     plt.ylabel("고객")
     _save_or_show(output_path, show=show)
 
@@ -221,7 +223,7 @@ def plot_order_status(
     plt.bar(order_status["order_status"], order_status["order_count"])
     plt.title("주문 상태별 주문 수")
     plt.xlabel("주문 상태")
-    plt.ylabel("주문 수")
+    plt.ylabel("주문 수 (건)")
     _save_or_show(output_path, show=show)
 
 
@@ -287,6 +289,7 @@ def build_visualization_report(summary: pd.DataFrame) -> str:
 ## 1. 시각화 목적
 
 전처리 및 EDA 결과를 바탕으로 온라인 쇼핑몰 데이터의 주요 패턴을 그래프로 확인했습니다.
+매출 집계는 `order_items`의 `line_total`을 합산하며 주문 상태를 필터링하지 않습니다. 따라서 완료 주문만의 매출이 아니라 전체 주문 상태의 주문 항목 금액입니다.
 
 ## 2. 생성한 그래프 목록
 
