@@ -1,0 +1,4 @@
+﻿merge,before_rows,after_rows,row_count_preserved,unmatched_count
+order_id → orders,764,764,True,0
+product_id → products,474,474,True,0
+customer_id → customers,100,100,True,0

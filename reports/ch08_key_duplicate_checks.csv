@@ -1,0 +1,5 @@
+﻿dataset,key,duplicate_count
+customers,customer_id,0
+products,product_id,0
+orders,order_id,0
+order_items,order_item_id,0
