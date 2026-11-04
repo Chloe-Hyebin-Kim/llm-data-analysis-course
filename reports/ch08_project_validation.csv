@@ -1,0 +1,9 @@
+﻿check,result,evidence
+pk_integrity,PASS,PK 결측 및 중복 0건
+fk_integrity,PASS,FK 미매칭 0건
+merge_checks_pass,PASS,"병합 3단계, 미매칭 0건"
+line_total_consistency,PASS,금액 계산 불일치 0건
+completed_total_consistency,PASS,"완료=148,990,000, 카테고리=148,990,000, 월별=148,990,000, 고객별=148,990,000"
+category_sales_ratio_pct_sum,PASS,매출 비율 합계 100.00%
+completed_rows_with_invalid_order_date,PASS,"날짜 오류 0건, 영향 금액 0원"
+public_customer_columns_safe,PASS,"노출 컬럼: [], 원본 ID 기반 라벨: False"
