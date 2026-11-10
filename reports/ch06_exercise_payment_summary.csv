@@ -1,0 +1,5 @@
+﻿payment_method,order_count,avg_order_amount,total_sales
+card,40,938550.0,37542000.0
+bank_transfer,49,805327.0,39461000.0
+kakao_pay,50,737220.0,36861000.0
+naver_pay,40,686900.0,27476000.0
