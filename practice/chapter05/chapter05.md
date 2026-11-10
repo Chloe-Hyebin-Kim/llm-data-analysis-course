@@ -3,10 +3,10 @@
 > 주 제출물은 실행 완료 Notebook `chapter05/chapter05.ipynb`입니다. 이 양식의 항목을 Notebook의 Markdown 셀로 추가해 작성합니다.
 
 ## 0. 제출 정보
-- 이름:
-- GitHub ID:
-- 작성일:
-- 최종 제출 URL:
+- 이름: 김혜빈
+- GitHub ID: Chloe-Hyebin-Kim
+- 작성일: 2026년 10월 13일
+- 최종 제출 URL: https://github.com/Chloe-Hyebin-Kim/llm-data-analysis-course/blob/main/practice/chapter05/chapter05.ipynb
 
 ## 1. 전처리 전 상태 기록
 - 각 데이터 shape:
