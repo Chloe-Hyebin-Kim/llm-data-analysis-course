@@ -11,19 +11,19 @@
 
 ```text
     dataset  rows_raw  columns_raw  rows_processed  columns_processed
-  customers       150            6             150                  6
-   products       100            4             100                  4
-     orders       300            5             300                  7
-order_items       764            5             764                  6
+  customers       152            6             150                  6
+   products       102            4              96                  4
+     orders       302            5             300                  7
+order_items       765            5             752                  6
 ```
 
 ## 파일 간 관계 점검 결과
 
 ```text
                                                check  invalid_count
-  orders.customer_id exists in customers.customer_id              0
-      order_items.order_id exists in orders.order_id              0
-order_items.product_id exists in products.product_id              0
+  orders.customer_id exists in customers.customer_id              2
+      order_items.order_id exists in orders.order_id              2
+order_items.product_id exists in products.product_id             26
 ```
 
 ## 주요 처리 내용
