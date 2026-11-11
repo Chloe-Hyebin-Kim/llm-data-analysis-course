@@ -3,10 +3,10 @@
 > 이 내용을 `chapter09.ipynb`의 Markdown 셀로 작성합니다.
 
 ## 제출 정보
-- 이름:
-- GitHub ID:
-- 작성일:
-- 최종 Notebook URL:
+- 이름:김혜빈
+- GitHub ID:Chloe-Hyebin-Kim
+- 작성일:2026-11-11
+- 최종 Notebook URL: https://github.com/Chloe-Hyebin-Kim/llm-data-analysis-course/blob/main/practice/chapter09/chapter09.ipynb
 
 ## 1. 예측 문제 정의
 - Target:
