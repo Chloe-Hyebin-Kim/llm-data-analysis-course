@@ -1,0 +1,27 @@
+{
+  "status": "FAIL",
+  "selected_model": null,
+  "selected_threshold": null,
+  "checks": [
+    {
+      "check": "python_syntax",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "common_raw_relationships",
+      "status": "PASS",
+      "detail": "[{'check': 'orders.customer_id exists in customers.customer_id', 'invalid_count': 0}, {'check': 'order_items.order_id exists in orders.order_id', 'invalid_count': 0}, {'check': 'order_items.product_id exists in products.product_id', 'invalid_count': 0}]"
+    },
+    {
+      "check": "classification_processed_prerequisite",
+      "status": "PASS",
+      "detail": "files=['customers_clean.csv', 'products_clean.csv', 'orders_clean.csv', 'order_items_clean.csv']"
+    },
+    {
+      "check": "unexpected_exception",
+      "status": "FAIL",
+      "detail": "ValueError: signup_date가 order_date보다 늦은 주문이 있습니다: 45건"
+    }
+  ]
+}
